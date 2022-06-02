@@ -9,7 +9,8 @@
 /* Begin PBXBuildFile section */
 		1B615D1073A390B6A09B154354102E3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		3B01322B144EBC412C1890D0E95ED70E /* CircleProgressView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A9BF3183177651986F840BF0C23A7EAA /* CircleProgressView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3F1312F95D8D75CFD0A24679EC7965E8 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0514361A0256268DE0812D6857888B /* ReplaceMe.swift */; };
+		41B4FBC52848B82D00B1DFE2 /* Int+degreesToRadians.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B4FBC42848B82D00B1DFE2 /* Int+degreesToRadians.swift */; };
+		41B4FBC72848B84F00B1DFE2 /* CircularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B4FBC62848B84F00B1DFE2 /* CircularView.swift */; };
 		581B29D6C3575213B1F042868B918C81 /* Pods-CircleProgressView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AB24DA445412F993443908007B69377 /* Pods-CircleProgressView_Example-dummy.m */; };
 		61009E889049D789BCA44F53752D863A /* Pods-CircleProgressView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F0AFC6508EC8FC43BE7108267D785E64 /* Pods-CircleProgressView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		667D00125496714DDAEC1EA8AF2914E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
@@ -41,7 +42,8 @@
 		16FD4437C9B15F859E8E546F84D6F8DB /* CircleProgressView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CircleProgressView-prefix.pch"; sourceTree = "<group>"; };
 		2396FF97EF0542DEBC79F0A128731A3C /* CircleProgressView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CircleProgressView.debug.xcconfig; sourceTree = "<group>"; };
 		2CF3848CCF661E24DC73C7B10A378C03 /* CircleProgressView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CircleProgressView-dummy.m"; sourceTree = "<group>"; };
-		3D0514361A0256268DE0812D6857888B /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = CircleProgressView/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		41B4FBC42848B82D00B1DFE2 /* Int+degreesToRadians.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+degreesToRadians.swift"; sourceTree = "<group>"; };
+		41B4FBC62848B84F00B1DFE2 /* CircularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularView.swift; sourceTree = "<group>"; };
 		4C6D0E358A230DA9D30F43C3C755BB4B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		4D250324E85E59019E3CE77667BC1DE5 /* CircleProgressView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CircleProgressView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		541CEE1CB5D437C21DA794413FC9D645 /* CircleProgressView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CircleProgressView.modulemap; sourceTree = "<group>"; };
@@ -103,7 +105,8 @@
 		3A7418D7CF19B1678231FC1D6BD1E712 /* CircleProgressView */ = {
 			isa = PBXGroup;
 			children = (
-				3D0514361A0256268DE0812D6857888B /* ReplaceMe.swift */,
+				41B4FBC42848B82D00B1DFE2 /* Int+degreesToRadians.swift */,
+				41B4FBC62848B84F00B1DFE2 /* CircularView.swift */,
 				E138EAB63F74969899DC5D6B37E8EF29 /* Pod */,
 				7F40E8F41D7810BE6D1E343297C0FB67 /* Support Files */,
 			);
@@ -381,8 +384,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41B4FBC72848B84F00B1DFE2 /* CircularView.swift in Sources */,
 				A3D7EFD2F2867440BF66F07BD2C6518F /* CircleProgressView-dummy.m in Sources */,
-				3F1312F95D8D75CFD0A24679EC7965E8 /* ReplaceMe.swift in Sources */,
+				41B4FBC52848B82D00B1DFE2 /* Int+degreesToRadians.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,6 +518,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2396FF97EF0542DEBC79F0A128731A3C /* CircleProgressView.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -536,6 +541,7 @@
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -674,6 +680,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7D2900A11CC9969B185965E1C1C743C1 /* CircleProgressView.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
