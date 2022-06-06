@@ -27,6 +27,6 @@ s.description      = 'This CocoaPod provides the ability to create a Circle Prog
 
   s.ios.deployment_target = '15.0'
 
-  s.source_files = 'CircleProgressView/**/*'
+  s.source_files = 'Classes/**/*'
 
 end

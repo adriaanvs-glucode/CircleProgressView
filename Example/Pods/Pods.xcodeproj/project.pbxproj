@@ -105,13 +105,21 @@
 		3A7418D7CF19B1678231FC1D6BD1E712 /* CircleProgressView */ = {
 			isa = PBXGroup;
 			children = (
-				41B4FBC42848B82D00B1DFE2 /* Int+degreesToRadians.swift */,
-				41B4FBC62848B84F00B1DFE2 /* CircularView.swift */,
+				410CB419284E3D64001FC784 /* Classes */,
 				E138EAB63F74969899DC5D6B37E8EF29 /* Pod */,
 				7F40E8F41D7810BE6D1E343297C0FB67 /* Support Files */,
 			);
 			name = CircleProgressView;
 			path = ../..;
+			sourceTree = "<group>";
+		};
+		410CB419284E3D64001FC784 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				41B4FBC42848B82D00B1DFE2 /* Int+degreesToRadians.swift */,
+				41B4FBC62848B84F00B1DFE2 /* CircularView.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
