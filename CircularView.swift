@@ -118,11 +118,3 @@ public class CircularView: UIView {
         currentProgressLayer.add(strokeIt, forKey: nil)
     }
 }
-//
-//  CircularView.swift
-//  CircleProgressView
-//
-//  Created by Adriaan van Schalkwyk on 2022/06/02.
-//
-
-import Foundation
