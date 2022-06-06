@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CircleProgressView'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'A Circle Progress Bar.'
   s.swift_version    = '5.0'
 
@@ -21,21 +21,12 @@ Pod::Spec.new do |s|
 s.description      = 'This CocoaPod provides the ability to create a Circle Progress Bar'
 
   s.homepage         = 'https://github.com/adriaanvs-glucode/CircleProgressView'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'adriaanvs-glucode' => 'Adriaan9@hotmail.co.za' }
+  s.author           = { 'adriaanvs-glucode' => 'adriaan@glucode.com' }
   s.source           = { :git => 'https://github.com/adriaanvs-glucode/CircleProgressView.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '15.0'
 
   s.source_files = 'CircleProgressView/**/*'
-  
-  # s.resource_bundles = {
-  #   'CircleProgressView' => ['CircleProgressView/Assets/*.png']
-  # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
